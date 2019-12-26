@@ -13,6 +13,7 @@ int main()
 
         s= PI * r^2
 
+        Если c == 12.56, то и площадь равна 12.56
 
     */
 
@@ -31,9 +32,9 @@ int main()
     //fmul st(2), st(4)
 
     __asm {
-        fld [c]; st(0)
+        fld [two]; st(0)
         fld [pi]
-        fld [two]
+        fld [c]
 
         fdiv st(0), st(1)
         fdiv st(0), st(2)
